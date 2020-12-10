@@ -41,15 +41,15 @@ namespace University_ERP.Views
                 Console.WriteLine(exception);
                 throw;
             }
-
-
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             GradStudent grad = new GradStudent();
-
+            string result = grad.ComputeGrade();
+            txt_grade.Text = result.ToString();
         }
 
+       
     }
 }

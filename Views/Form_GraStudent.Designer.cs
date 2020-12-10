@@ -216,6 +216,7 @@ namespace University_ERP.Views
             this.txt_grade.Name = "txt_grade";
             this.txt_grade.Size = new System.Drawing.Size(131, 20);
             this.txt_grade.TabIndex = 38;
+            
             // 
             // label9
             // 

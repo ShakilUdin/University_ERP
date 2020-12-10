@@ -63,6 +63,8 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\GradStudent.cs" />
+    <Compile Include="Models\PartTimeStudent.cs" />
+    <Compile Include="Models\PhDStudent.cs" />
     <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>

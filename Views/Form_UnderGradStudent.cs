@@ -47,9 +47,7 @@ namespace University_ERP.Views
             UnderGradStudent grad = new UnderGradStudent();
             string result = grad.ComputeGrade();
             txt_grade.Text = result.ToString();
-
         }
 
-       
     }
 }
