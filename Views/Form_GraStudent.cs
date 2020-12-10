@@ -44,5 +44,12 @@ namespace University_ERP.Views
 
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            GradStudent grad = new GradStudent();
+
+        }
+
     }
 }
