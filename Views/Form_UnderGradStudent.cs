@@ -41,5 +41,12 @@ namespace University_ERP.Views
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            UnderGradStudent grad = new UnderGradStudent();
+            string result = grad.ComputeGrade();
+            txt_grade.Text = result.ToString();
+        }
     }
 }

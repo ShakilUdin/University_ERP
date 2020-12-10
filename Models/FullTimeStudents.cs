@@ -9,11 +9,18 @@ namespace University_ERP.Models
     abstract class FullTimeStudents : Students
     {
         int voter_id;
+        int result;
 
         public int VoterId
         {
             get => voter_id;
             set => voter_id = value;
+        }
+
+        public int Result
+        {
+            get => result;
+            set => result = value;
         }
 
         public FullTimeStudents()

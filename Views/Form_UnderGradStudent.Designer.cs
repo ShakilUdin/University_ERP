@@ -47,6 +47,9 @@ namespace University_ERP.Views
             this.txt_test2 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_grade = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -179,7 +182,7 @@ namespace University_ERP.Views
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(488, 163);
+            this.button1.Location = new System.Drawing.Point(418, 202);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 23);
             this.button1.TabIndex = 16;
@@ -189,7 +192,7 @@ namespace University_ERP.Views
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(488, 202);
+            this.button2.Location = new System.Drawing.Point(533, 202);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 23);
             this.button2.TabIndex = 17;
@@ -197,12 +200,41 @@ namespace University_ERP.Views
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(339, 117);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(67, 13);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Total Result ";
+            // 
+            // txt_grade
+            // 
+            this.txt_grade.Location = new System.Drawing.Point(412, 114);
+            this.txt_grade.Name = "txt_grade";
+            this.txt_grade.Size = new System.Drawing.Size(131, 20);
+            this.txt_grade.TabIndex = 19;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(418, 173);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(104, 23);
+            this.button3.TabIndex = 20;
+            this.button3.Text = "Show Grade";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form_UnderGradStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(649, 237);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.txt_grade);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txt_test2);
@@ -250,5 +282,8 @@ namespace University_ERP.Views
         private System.Windows.Forms.TextBox txt_test2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_grade;
+        private System.Windows.Forms.Button button3;
     }
 }
