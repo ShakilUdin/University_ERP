@@ -15,6 +15,10 @@ namespace University_ERP.Data
         public DbSet<UnderGradStudent> UnderGradStudents { get; set; }
 
         public DbSet<GradStudent> GradStudents { get; set; }
+
+        public DbSet<PartTimeStudent> PartTimeStudents { get; set; }
+
+        public DbSet<PhDStudent> PhDStudents { get; set; }
         
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -60,7 +64,49 @@ namespace University_ERP.Data
             modelBuilder.Entity<GradStudent>()
                 .Property(s => s.Telephone)
                 .IsRequired();
+            // Part Time
 
+            modelBuilder.Entity<PartTimeStudent>()
+                .Property(s => s.Firstname)
+                .HasMaxLength(10);
+
+            modelBuilder.Entity<PartTimeStudent>()
+                .Property(s => s.Lastname)
+                .HasMaxLength(10);
+
+            modelBuilder.Entity<PartTimeStudent>()
+                .Property(s => s.Streetaddress)
+                .HasMaxLength(300);
+
+            modelBuilder.Entity<PartTimeStudent>()
+                .Property(s => s.City)
+                .HasMaxLength(20);
+
+            modelBuilder.Entity<PartTimeStudent>()
+                .Property(s => s.Telephone)
+                .IsRequired();
+
+            //PDH Student
+
+            modelBuilder.Entity<PhDStudent>()
+                .Property(s => s.Firstname)
+                .HasMaxLength(10);
+
+            modelBuilder.Entity<PhDStudent>()
+                .Property(s => s.Lastname)
+                .HasMaxLength(10);
+
+            modelBuilder.Entity<PhDStudent>()
+                .Property(s => s.Streetaddress)
+                .HasMaxLength(300);
+
+            modelBuilder.Entity<PhDStudent>()
+                .Property(s => s.City)
+                .HasMaxLength(20);
+
+            modelBuilder.Entity<PhDStudent>()
+                .Property(s => s.Telephone)
+                .IsRequired();
         }
     }
 }
