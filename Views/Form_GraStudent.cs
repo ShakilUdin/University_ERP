@@ -28,6 +28,7 @@ namespace University_ERP.Views
         {
             UniversityBDContext db = new UniversityBDContext();
             GradStudent grad = new GradStudent(txt_fname.Text, txt_lname.Text, txt_address.Text, txt_city.Text, int.Parse(txt_tel.Text), int.Parse(txt_test2.Text), int.Parse(txt_test2.Text), int.Parse(txt_voterid.Text));
+            txt_grade.Text = grad.ComputeGrade();
 
             try
             {
@@ -46,8 +47,7 @@ namespace University_ERP.Views
         private void button3_Click(object sender, EventArgs e)
         {
             GradStudent grad = new GradStudent();
-            string result = grad.ComputeGrade();
-            txt_grade.Text = result.ToString();
+            txt_grade.Text = grad.ComputeGrade();
         }
 
        

@@ -65,6 +65,10 @@
     <Compile Include="Migrations\202012111410288_ParTime_and_PHD_Student_Model_Added.designer.cs">
       <DependentUpon>202012111410288_ParTime_and_PHD_Student_Model_Added.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202012121427243_UnderGradStudent_GradStudent_Field_Added.cs" />
+    <Compile Include="Migrations\202012121427243_UnderGradStudent_GradStudent_Field_Added.designer.cs">
+      <DependentUpon>202012121427243_UnderGradStudent_GradStudent_Field_Added.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\GradStudent.cs" />
     <Compile Include="Models\PartTimeStudent.cs" />
@@ -86,6 +90,12 @@
     <Compile Include="Views\Form_GraStudent.Designer.cs">
       <DependentUpon>Form_GraStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Form_PartStudent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Form_PartStudent.Designer.cs">
+      <DependentUpon>Form_PartStudent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Form_UnderGradStudent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012111410288_ParTime_and_PHD_Student_Model_Added.resx">
       <DependentUpon>202012111410288_ParTime_and_PHD_Student_Model_Added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012121427243_UnderGradStudent_GradStudent_Field_Added.resx">
+      <DependentUpon>202012121427243_UnderGradStudent_GradStudent_Field_Added.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -112,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Form_GraStudent.resx">
       <DependentUpon>Form_GraStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Form_PartStudent.resx">
+      <DependentUpon>Form_PartStudent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Form_UnderGradStudent.resx">
       <DependentUpon>Form_UnderGradStudent.cs</DependentUpon>

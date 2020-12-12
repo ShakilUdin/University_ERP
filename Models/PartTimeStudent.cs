@@ -8,20 +8,21 @@ namespace University_ERP.Models
 {
     class PartTimeStudent : FullTimeStudents
     {
-        private int studentid;
-        public PartTimeStudent()
-        {}
+        private int voter_id;
 
-        public PartTimeStudent(int id, string fname, string lname, string address, string citi, int tel, int t1, int t2,
-            int voter) : base(fname, lname, address, citi, tel, t1, t2, voter)
+        public int VoterId
         {
-            this.studentid = id;
+            get => voter_id;
+            set => voter_id = value;
         }
 
-        public int Studentid
+        public  PartTimeStudent()
+        {}
+
+        public PartTimeStudent(int vot_id, string fname, string lname, string address, string citi, int tel, int t1, int t2, int res)
+            : base(fname, lname, address, citi, tel, t1, t2, res)
         {
-            get => studentid;
-            set => studentid = value;
+            this.voter_id = vot_id;
         }
 
         public override string ComputeGrade()

@@ -33,6 +33,7 @@ namespace University_ERP
             this.studentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.underGradStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gradStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.partStudentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,8 @@ namespace University_ERP
             // 
             this.studentsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.underGradStudentToolStripMenuItem,
-            this.gradStudentToolStripMenuItem});
+            this.gradStudentToolStripMenuItem,
+            this.partStudentToolStripMenuItem});
             this.studentsToolStripMenuItem.Name = "studentsToolStripMenuItem";
             this.studentsToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.studentsToolStripMenuItem.Text = "Students";
@@ -68,6 +70,13 @@ namespace University_ERP
             this.gradStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.gradStudentToolStripMenuItem.Text = "Grad Student";
             this.gradStudentToolStripMenuItem.Click += new System.EventHandler(this.gradStudentToolStripMenuItem_Click);
+            // 
+            // partStudentToolStripMenuItem
+            // 
+            this.partStudentToolStripMenuItem.Name = "partStudentToolStripMenuItem";
+            this.partStudentToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.partStudentToolStripMenuItem.Text = "Part Student";
+            this.partStudentToolStripMenuItem.Click += new System.EventHandler(this.partStudentToolStripMenuItem_Click);
             // 
             // Form1
             // 
@@ -94,6 +103,7 @@ namespace University_ERP
         private System.Windows.Forms.ToolStripMenuItem studentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem underGradStudentToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gradStudentToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem partStudentToolStripMenuItem;
     }
 }
 

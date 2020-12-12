@@ -12,8 +12,8 @@ namespace University_ERP.Models
         {
         }
 
-        public PhDStudent(int id, string fname, string lname, string address, string citi, int tel, int t1, int t2,
-            int voter) : base(fname, lname, address, citi, tel, t1, t2, voter)
+        public PhDStudent(string fname, string lname, string address, string citi, int tel, int t1, int t2,
+            int std_id) : base(fname, lname, address, citi, tel, t1, t2, std_id)
         {
 
         }

@@ -29,5 +29,11 @@ namespace University_ERP
             Form_GraStudent grad = new Form_GraStudent();
             grad.ShowDialog();
         }
+
+        private void partStudentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_PartStudent part = new Form_PartStudent();
+            part.ShowDialog();
+        }
     }
 }
