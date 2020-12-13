@@ -18,7 +18,7 @@ namespace University_ERP.Data
 
         public DbSet<PartTimeStudent> PartTimeStudents { get; set; }
 
-        public DbSet<PhDStudent> PhDStudents { get; set; }
+       
         
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -88,25 +88,7 @@ namespace University_ERP.Data
 
             //PDH Student
 
-            modelBuilder.Entity<PhDStudent>()
-                .Property(s => s.Firstname)
-                .HasMaxLength(10);
-
-            modelBuilder.Entity<PhDStudent>()
-                .Property(s => s.Lastname)
-                .HasMaxLength(10);
-
-            modelBuilder.Entity<PhDStudent>()
-                .Property(s => s.Streetaddress)
-                .HasMaxLength(300);
-
-            modelBuilder.Entity<PhDStudent>()
-                .Property(s => s.City)
-                .HasMaxLength(20);
-
-            modelBuilder.Entity<PhDStudent>()
-                .Property(s => s.Telephone)
-                .IsRequired();
+           
         }
     }
 }

@@ -16,14 +16,7 @@ namespace University_ERP.Models
             set => voter_id = value;
         }
 
-        public  PartTimeStudent()
-        {}
-
-        public PartTimeStudent(int vot_id, string fname, string lname, string address, string citi, int tel, int t1, int t2, int res)
-            : base(fname, lname, address, citi, tel, t1, t2, res)
-        {
-            this.voter_id = vot_id;
-        }
+        
 
         public override string ComputeGrade()
         {
