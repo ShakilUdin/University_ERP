@@ -69,6 +69,10 @@
     <Compile Include="Migrations\202012121427243_UnderGradStudent_GradStudent_Field_Added.designer.cs">
       <DependentUpon>202012121427243_UnderGradStudent_GradStudent_Field_Added.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202012131340370_Models_Updated.cs" />
+    <Compile Include="Migrations\202012131340370_Models_Updated.designer.cs">
+      <DependentUpon>202012131340370_Models_Updated.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\GradStudent.cs" />
     <Compile Include="Models\PartTimeStudent.cs" />
@@ -110,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202012121427243_UnderGradStudent_GradStudent_Field_Added.resx">
       <DependentUpon>202012121427243_UnderGradStudent_GradStudent_Field_Added.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202012131340370_Models_Updated.resx">
+      <DependentUpon>202012131340370_Models_Updated.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
