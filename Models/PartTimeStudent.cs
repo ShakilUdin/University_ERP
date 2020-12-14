@@ -17,7 +17,6 @@ namespace University_ERP.Models
         }
 
         
-
         public override string ComputeGrade()
         {
             double result = (0.40 + test_1) + (0.60 + test_2);

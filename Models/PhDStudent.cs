@@ -25,5 +25,11 @@ namespace University_ERP.Models
         {
             this.phdadvisor = advisor;
         }
+
+        public override string ComputeGrade()
+        {
+            double result = (0.30 + test_1) + (0.70 + test_2);
+            return result.ToString();
+        }
     }
 }

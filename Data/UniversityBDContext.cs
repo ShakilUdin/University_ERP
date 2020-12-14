@@ -18,11 +18,14 @@ namespace University_ERP.Data
 
         public DbSet<PartTimeStudent> PartTimeStudents { get; set; }
 
+        public DbSet<PhDStudent> PhDStudents { get; set; }
+
        
         
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            //Under Grad Student
             modelBuilder.Entity<UnderGradStudent>()
                 .Property(s => s.Firstname)
                 .HasMaxLength(10);
@@ -42,9 +45,10 @@ namespace University_ERP.Data
             modelBuilder.Entity<UnderGradStudent>()
                 .Property(s => s.Telephone)
                 .IsRequired();
+
+
 
             // GradStudents
-
             modelBuilder.Entity<GradStudent>()
                 .Property(s => s.Firstname)
                 .HasMaxLength(10);
@@ -64,8 +68,9 @@ namespace University_ERP.Data
             modelBuilder.Entity<GradStudent>()
                 .Property(s => s.Telephone)
                 .IsRequired();
+            
+        
             // Part Time
-
             modelBuilder.Entity<PartTimeStudent>()
                 .Property(s => s.Firstname)
                 .HasMaxLength(10);
@@ -85,9 +90,10 @@ namespace University_ERP.Data
             modelBuilder.Entity<PartTimeStudent>()
                 .Property(s => s.Telephone)
                 .IsRequired();
+
+
 
             //PDH Student
-
             modelBuilder.Entity<PhDStudent>()
                 .Property(p => p.Firstname)
                 .HasMaxLength(10);
@@ -110,28 +116,7 @@ namespace University_ERP.Data
             modelBuilder.Entity<PhDStudent>()
                 .Property(p => p.Phdadvisor)
                 .HasMaxLength(250);
-            // Part Time
-
-            modelBuilder.Entity<PartTimeStudent>()
-                .Property(s => s.Firstname)
-                .HasMaxLength(10);
-
-            modelBuilder.Entity<PartTimeStudent>()
-                .Property(s => s.Lastname)
-                .HasMaxLength(10);
-
-            modelBuilder.Entity<PartTimeStudent>()
-                .Property(s => s.Streetaddress)
-                .HasMaxLength(300);
-
-            modelBuilder.Entity<PartTimeStudent>()
-                .Property(s => s.City)
-                .HasMaxLength(20);
-
-            modelBuilder.Entity<PartTimeStudent>()
-                .Property(s => s.Telephone)
-                .IsRequired();
-
+            
         }
     }
 }
