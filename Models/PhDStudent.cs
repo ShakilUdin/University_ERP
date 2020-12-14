@@ -6,23 +6,24 @@ using System.Threading.Tasks;
 
 namespace University_ERP.Models
 {
-    class PhDStudent : FullTimeStudents
+    class PhDStudent : Students
     {
-        public PhDStudent()
+        string phdadvisor;
+
+        public string Phdadvisor
         {
+            get => phdadvisor;
+            set => phdadvisor = value;
         }
+
+        public PhDStudent()
+        {}
 
         public PhDStudent(string fname, string lname, string address, string citi, int tel, int t1, int t2,
-            int std_id) : base(fname, lname, address, citi, tel, t1, t2, std_id)
+            string advisor)
+            : base(fname, lname, address, citi, tel, t1, t2)
         {
-
-        }
-
-
-        public override string ComputeGrade()
-        {
-            double result = (0.30 + test_1) + (0.70 + test_2);
-            return result.ToString();
+            this.phdadvisor = advisor;
         }
     }
 }

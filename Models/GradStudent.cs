@@ -13,17 +13,11 @@
         public GradStudent()
         {}
 
-<<<<<<< HEAD
-        public GradStudent(string fname, string lname, string address, string citi, int tel, int t1, int t2, int std,
-            string thes,int res)
-            : base(fname, lname, address, citi, tel, t1, t2, std, res)
-=======
+
         public GradStudent(string fname, string lname, string address, string citi, int tel, int t1, int t2,
-            int std_id)
-            : base(fname, lname, address, citi, tel, t1, t2, std_id)
->>>>>>> f6a88ed249617d839af65ae1595208e2f9cfaa94
+            int res, int std_id, string theses) : base(fname, lname, address, citi, tel, t1, t2, res, std_id)
         {
-            this.thesis = thes;
+            this.thesis = theses;
         }
     }
 }

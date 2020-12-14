@@ -88,7 +88,50 @@ namespace University_ERP.Data
 
             //PDH Student
 
-           
+            modelBuilder.Entity<PhDStudent>()
+                .Property(p => p.Firstname)
+                .HasMaxLength(10);
+
+            modelBuilder.Entity<PhDStudent>()
+                .Property(p => p.Lastname)
+                .HasMaxLength(10);
+
+            modelBuilder.Entity<PhDStudent>()
+                .Property(p => p.Streetaddress)
+                .HasMaxLength(300);
+
+            modelBuilder.Entity<PhDStudent>()
+                .Property(p => p.City)
+                .HasMaxLength(20);
+
+            modelBuilder.Entity<PhDStudent>()
+                .Property(p => p.Telephone)
+                .IsRequired();
+            modelBuilder.Entity<PhDStudent>()
+                .Property(p => p.Phdadvisor)
+                .HasMaxLength(250);
+            // Part Time
+
+            modelBuilder.Entity<PartTimeStudent>()
+                .Property(s => s.Firstname)
+                .HasMaxLength(10);
+
+            modelBuilder.Entity<PartTimeStudent>()
+                .Property(s => s.Lastname)
+                .HasMaxLength(10);
+
+            modelBuilder.Entity<PartTimeStudent>()
+                .Property(s => s.Streetaddress)
+                .HasMaxLength(300);
+
+            modelBuilder.Entity<PartTimeStudent>()
+                .Property(s => s.City)
+                .HasMaxLength(20);
+
+            modelBuilder.Entity<PartTimeStudent>()
+                .Property(s => s.Telephone)
+                .IsRequired();
+
         }
     }
 }
