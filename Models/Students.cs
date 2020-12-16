@@ -63,9 +63,9 @@ namespace University_ERP.Models
 
        
 
-        public virtual string ComputeGrade()
+        public virtual string ComputeGrade(int test1, int test2)
         {
-            double result = (0.45 + test_1) + (0.55 + test_2);
+            double result = (0.45 + test1) + (0.55 + test2);
             return result.ToString();
         }
 
