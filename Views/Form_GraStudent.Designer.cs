@@ -31,10 +31,6 @@ namespace University_ERP.Views
         {
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.txt_test2 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_test1 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.txt_tel = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_city = new System.Windows.Forms.TextBox();
@@ -46,15 +42,18 @@ namespace University_ERP.Views
             this.txt_fname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_voterid = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
             this.txt_thesis = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.txt_test2 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_test1 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(487, 198);
+            this.button2.Location = new System.Drawing.Point(487, 151);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(104, 23);
             this.button2.TabIndex = 35;
@@ -64,45 +63,13 @@ namespace University_ERP.Views
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(377, 198);
+            this.button1.Location = new System.Drawing.Point(377, 151);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(104, 23);
             this.button1.TabIndex = 34;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // txt_test2
-            // 
-            this.txt_test2.Location = new System.Drawing.Point(103, 191);
-            this.txt_test2.Name = "txt_test2";
-            this.txt_test2.Size = new System.Drawing.Size(203, 20);
-            this.txt_test2.TabIndex = 33;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 191);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 13);
-            this.label8.TabIndex = 32;
-            this.label8.Text = "Test Two";
-            // 
-            // txt_test1
-            // 
-            this.txt_test1.Location = new System.Drawing.Point(103, 164);
-            this.txt_test1.Name = "txt_test1";
-            this.txt_test1.Size = new System.Drawing.Size(203, 20);
-            this.txt_test1.TabIndex = 31;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 164);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 13);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "Test One";
             // 
             // txt_tel
             // 
@@ -191,25 +158,6 @@ namespace University_ERP.Views
             this.txt_voterid.Size = new System.Drawing.Size(164, 20);
             this.txt_voterid.TabIndex = 19;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "Student ID";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(487, 169);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(104, 23);
-            this.button3.TabIndex = 36;
-            this.button3.Text = "Show Grade";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
             // txt_thesis
             // 
             this.txt_thesis.Location = new System.Drawing.Point(392, 106);
@@ -226,21 +174,62 @@ namespace University_ERP.Views
             this.label9.TabIndex = 37;
             this.label9.Text = "Thesis";
             // 
+            // txt_test2
+            // 
+            this.txt_test2.Location = new System.Drawing.Point(103, 188);
+            this.txt_test2.Name = "txt_test2";
+            this.txt_test2.Size = new System.Drawing.Size(203, 20);
+            this.txt_test2.TabIndex = 42;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(12, 188);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(52, 13);
+            this.label8.TabIndex = 41;
+            this.label8.Text = "Test Two";
+            // 
+            // txt_test1
+            // 
+            this.txt_test1.Location = new System.Drawing.Point(103, 161);
+            this.txt_test1.Name = "txt_test1";
+            this.txt_test1.Size = new System.Drawing.Size(203, 20);
+            this.txt_test1.TabIndex = 40;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(12, 161);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(51, 13);
+            this.label7.TabIndex = 39;
+            this.label7.Text = "Test One";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(12, 9);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(71, 13);
+            this.label10.TabIndex = 43;
+            this.label10.Text = "Voter ID Card";
+            // 
             // Form_GraStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(634, 237);
-            this.Controls.Add(this.txt_thesis);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.ClientSize = new System.Drawing.Size(634, 228);
+            this.Controls.Add(this.label10);
             this.Controls.Add(this.txt_test2);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_test1);
             this.Controls.Add(this.label7);
+            this.Controls.Add(this.txt_thesis);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txt_tel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txt_city);
@@ -252,7 +241,6 @@ namespace University_ERP.Views
             this.Controls.Add(this.txt_fname);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txt_voterid);
-            this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_GraStudent";
@@ -267,10 +255,6 @@ namespace University_ERP.Views
 
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txt_test2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txt_test1;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_tel;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_city;
@@ -282,9 +266,12 @@ namespace University_ERP.Views
         private System.Windows.Forms.TextBox txt_fname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_voterid;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.TextBox txt_thesis;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_test2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_test1;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
     }
 }

@@ -163,6 +163,7 @@ namespace University_ERP.Views
             this.txt_test1.Name = "txt_test1";
             this.txt_test1.Size = new System.Drawing.Size(203, 20);
             this.txt_test1.TabIndex = 13;
+           
             // 
             // label8
             // 
@@ -215,7 +216,6 @@ namespace University_ERP.Views
             this.txt_grade.Name = "txt_grade";
             this.txt_grade.Size = new System.Drawing.Size(131, 20);
             this.txt_grade.TabIndex = 19;
-            
             // 
             // button3
             // 

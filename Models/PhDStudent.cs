@@ -17,7 +17,8 @@ namespace University_ERP.Models
         }
 
         public PhDStudent()
-        {}
+        {
+        }
 
         public PhDStudent(string fname, string lname, string address, string citi, int tel, int t1, int t2,
             string advisor)
@@ -26,9 +27,9 @@ namespace University_ERP.Models
             this.phdadvisor = advisor;
         }
 
-        public override string ComputeGrade()
+        public override string ComputeGrade(int test1, int test2)
         {
-            double result = (0.30 + test_1) + (0.70 + test_2);
+            double result = (0.30 + test1) + (0.70 + test2);
             return result.ToString();
         }
     }

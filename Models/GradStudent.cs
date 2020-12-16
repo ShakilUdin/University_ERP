@@ -1,4 +1,6 @@
-﻿namespace University_ERP.Models
+﻿using System.Runtime.Versioning;
+
+namespace University_ERP.Models
 {
     class GradStudent : FullTimeStudents
     {
@@ -14,10 +16,11 @@
         {}
 
 
-        public GradStudent(string fname, string lname, string address, string citi, int tel, int t1, int t2,
-            int res, int std_id, string theses) : base(fname, lname, address, citi, tel, t1, t2, res, std_id)
+        public GradStudent(string fname, string lname, string address, string citi, int tel, int t1, int t2, int res,
+            int std_id, string ths)
+            : base(fname, lname, address, citi, tel, t1, t2, res, std_id)
         {
-            this.thesis = theses;
+            this.thesis = ths;
         }
     }
 }

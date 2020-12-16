@@ -26,9 +26,9 @@ namespace University_ERP.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UniversityBDContext db = new UniversityBDContext();
-           
-            GradStudent grad = new GradStudent();
+            UniversityBDContext db = new UniversityBDContext()
+
+            GradStudent grad = new GradStudent()
             
 
             try
@@ -47,10 +47,10 @@ namespace University_ERP.Views
 
         private void button3_Click(object sender, EventArgs e)
         {
-            GradStudent grad = new GradStudent();
-            txt_thesis.Text = grad.ComputeGrade();
+           
+            
         }
 
-       
+      
     }
 }

@@ -44,10 +44,11 @@ namespace University_ERP.Views
 
         private void button3_Click(object sender, EventArgs e)
         {
-            UnderGradStudent grad = new UnderGradStudent();
-            string result = grad.ComputeGrade();
-            txt_grade.Text = result.ToString();
+            UnderGradStudent under = new UnderGradStudent();
+            under.ComputeGrade(int.Parse(txt_test1.Text), int.Parse(txt_test2.Text));
+
         }
 
+       
     }
 }
