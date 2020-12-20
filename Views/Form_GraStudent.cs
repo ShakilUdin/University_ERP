@@ -26,9 +26,9 @@ namespace University_ERP.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UniversityBDContext db = new UniversityBDContext()
+            UniversityBDContext db = new UniversityBDContext();
 
-            GradStudent grad = new GradStudent()
+            GradStudent grad = new GradStudent();
             
 
             try
