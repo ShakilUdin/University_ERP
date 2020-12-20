@@ -20,6 +20,14 @@ namespace University_ERP.Data
 
         public DbSet<PhDStudent> PhDStudents { get; set; }
 
+        public DbSet<LabManager> LabManagers { get; set; }
+
+        public DbSet<PartTimeFaculty> PartTimeFaculties { get; set; }
+
+        public DbSet<Secretary> Secretaries { get; set; }
+
+        public DbSet<FullTimeFaculty> FullTimeFaculties { get; set; }
+
        
         
 

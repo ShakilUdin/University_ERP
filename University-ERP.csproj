@@ -90,9 +90,14 @@
       <DependentUpon>202012151223488_PHDStudent_Model_Update.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\FullTimeFaculty.cs" />
     <Compile Include="Models\GradStudent.cs" />
+    <Compile Include="Models\LabManager.cs" />
+    <Compile Include="Models\PartTimeFaculty.cs" />
     <Compile Include="Models\PartTimeStudent.cs" />
     <Compile Include="Models\PhDStudent.cs" />
+    <Compile Include="Models\Secretary.cs" />
     <Compile Include="Views\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
