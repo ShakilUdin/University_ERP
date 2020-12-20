@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,6 +10,7 @@ namespace University_ERP.Models
     class Employee
     {
         private int id;
+        [Key]
         private int empid;
         private string firstname;
         private string lastname;
@@ -16,6 +18,13 @@ namespace University_ERP.Models
         private string city;
         private string department;
         private int telephone;
+
+
+        public int Id
+        {
+            get => id;
+            set => id = value;
+        }
 
         public int Empid
         {

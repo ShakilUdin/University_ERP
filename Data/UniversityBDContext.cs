@@ -125,6 +125,24 @@ namespace University_ERP.Data
                 .Property(p => p.Phdadvisor)
                 .HasMaxLength(250);
             
+            //Employee
+            modelBuilder.Entity<Employee>()
+                .Property(e => e.Firstname)
+                .HasMaxLength(10);
+            modelBuilder.Entity<Employee>()
+                .Property(e => e.Lastname)
+                .HasMaxLength(10);
+            modelBuilder.Entity<Employee>()
+                .Property(e => e.Streetaddress)
+                .HasMaxLength(300);
+            modelBuilder.Entity<Employee>()
+                .Property(e => e.City)
+                .HasMaxLength(20);
+            modelBuilder.Entity<Employee>()
+                .Property(e => e.Department)
+                .HasMaxLength(50);
+
+
         }
     }
 }
