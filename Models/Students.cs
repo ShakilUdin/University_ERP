@@ -53,24 +53,7 @@ namespace University_ERP.Models
             get => telephone;
             set => telephone = value;
         }
-<<<<<<< HEAD
-=======
 
-        protected int Test1
-        {
-            get => test_1;
-            set => test_1 = value;
-        }
-
-       
-
-        public virtual string ComputeGrade(int test1, int test2)
-        {
-            double result = (0.45 + test1) + (0.55 + test2);
-            return result.ToString();
-        }
-
->>>>>>> 865db656b23a49cddf53ea6715834dcbb3de02ae
         public  Students()
         {}
 
