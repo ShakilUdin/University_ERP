@@ -21,17 +21,7 @@ namespace University_ERP.Models
             set => student_id = value;
         }
 
-        protected int Test1
-        {
-            get => test_1;
-            set => test_1 = value;
-        }
-
-        protected int Test2
-        {
-            get => test_2;
-            set => test_2 = value;
-        }
+       
 
 
         public FullTimeStudents()
@@ -44,6 +34,10 @@ namespace University_ERP.Models
             
         }
 
-       
+        public override string ComputeGrade()
+        {
+            double result = (0.40 + Test1) + (0.60 + Test2);
+            return result.ToString();
+        }
     }
 }

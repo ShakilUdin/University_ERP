@@ -28,6 +28,7 @@ namespace University_ERP.Views
         {
          UnderGradStudent under = new UnderGradStudent(txt_fname.Text, txt_lname.Text, txt_address.Text, txt_city.Text, int.Parse(txt_tel.Text), int.Parse(txt_test1.Text), int.Parse(txt_test2.Text), int.Parse(txt_voterid.Text), int.Parse(txt_grade.Text));
 
+         
             try
             {
                 UniversityBDContext db = new UniversityBDContext();
@@ -45,7 +46,8 @@ namespace University_ERP.Views
         private void button3_Click(object sender, EventArgs e)
         {
             UnderGradStudent under = new UnderGradStudent();
-            under.ComputeGrade(int.Parse(txt_test1.Text), int.Parse(txt_test2.Text));
+            txt_grade.Text = under.ComputeGrade();
+
 
         }
 

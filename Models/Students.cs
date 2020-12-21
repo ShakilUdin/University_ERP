@@ -16,6 +16,9 @@ namespace University_ERP.Models
         string streetaddress;
         string city;
         int telephone;
+        protected int test1;
+        protected int test2;
+
        
 
         public int Id
@@ -54,6 +57,19 @@ namespace University_ERP.Models
             set => telephone = value;
         }
 
+        protected int Test1
+        {
+            get => test1;
+            set => test1 = value;
+        }
+
+        protected int Test2
+        {
+            get => test2;
+            set => test2 = value;
+        }
+
+
         public  Students()
         {}
 
@@ -64,13 +80,10 @@ namespace University_ERP.Models
             this.streetaddress = address;
             this.city = citi;
             this.telephone = tel;
+            this.test1 = t1;
+            this.test2 = t2;
         }
 
-        public virtual string ComputeGrade(int t1, int t2)
-        {
-            double result = (0.40 + t1) + (0.60 + t2);
-            return result.ToString();
-        }
-
+        public abstract string ComputeGrade();
     }
 }

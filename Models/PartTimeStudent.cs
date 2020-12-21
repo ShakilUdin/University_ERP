@@ -16,10 +16,10 @@ namespace University_ERP.Models
             set => voter_id = value;
         }
 
-        
-        public override string ComputeGrade(int t1, int t2)
+
+        public override string ComputeGrade()
         {
-            double result = (0.40 + t1) + (0.60 + t2);
+            double result = (0.40 + test1) + (0.60 + test1);
             return result.ToString();
         }
     }
