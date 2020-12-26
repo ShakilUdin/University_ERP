@@ -16,10 +16,7 @@ namespace University_ERP.Models
         string streetaddress;
         string city;
         int telephone;
-        protected int test1;
-        protected int test2;
 
-       
 
         public int Id
         {
@@ -57,31 +54,20 @@ namespace University_ERP.Models
             set => telephone = value;
         }
 
-        protected int Test1
-        {
-            get => test1;
-            set => test1 = value;
-        }
-
-        protected int Test2
-        {
-            get => test2;
-            set => test2 = value;
-        }
+       
 
 
         public  Students()
         {}
 
-        public Students(string fname, string lname, string address, string citi, int tel, int t1, int t2)
+        public Students(string fname, string lname, string address, string citi, int tel)
         {
             this.firstname = fname;
             this.lastname = lname;
             this.streetaddress = address;
             this.city = citi;
             this.telephone = tel;
-            this.test1 = t1;
-            this.test2 = t2;
+            
         }
 
         public abstract string ComputeGrade();

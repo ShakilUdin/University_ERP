@@ -26,31 +26,23 @@ namespace University_ERP.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-            UniversityBDContext db = new UniversityBDContext();
+            GradStudent grad = new GradStudent(int.Parse(txt_voterid.Text), txt_fname.Text, txt_lname.Text,
+                txt_address.Text, txt_city.Text, int.Parse(txt_tel.Text), int.Parse(txt_test1.Text), int.Parse(txt_test2.Text), txt_thesis.Text);
 
-            GradStudent grad = new GradStudent();
-            
+            UniversityBDContext db = new UniversityBDContext();
 
             try
             {
                 db.GradStudents.Add(grad);
                 db.SaveChanges();
-                MessageBox.Show("Data Saved");
-                this.Close();
+                MessageBox.Show("Grad Student Data Saved In Database");
             }
             catch (Exception exception)
             {
-                Console.WriteLine(exception);
-                throw;
+                MessageBox.Show("Data Was Not Saved");
+                throw exception;
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-           
-            
-        }
-
-      
     }
 }

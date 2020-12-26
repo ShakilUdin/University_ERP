@@ -11,7 +11,6 @@ namespace University_ERP.Data
     class UniversityBDContext : DbContext
     {
        
-
         public DbSet<UnderGradStudent> UnderGradStudents { get; set; }
 
         public DbSet<GradStudent> GradStudents { get; set; }

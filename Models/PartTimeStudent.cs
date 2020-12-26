@@ -19,7 +19,7 @@ namespace University_ERP.Models
 
         public override string ComputeGrade()
         {
-            double result = (0.40 + test1) + (0.60 + test1);
+            double result = (0.40 + Test1) + (0.60 + Test1);
             return result.ToString();
         }
     }
